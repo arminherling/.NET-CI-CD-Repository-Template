@@ -50,6 +50,7 @@ Supported Github-hosted runners: https://help.github.com/en/actions/automating-y
 
 ```yml
     ...
+
     strategy:
 
       matrix:
@@ -66,18 +67,16 @@ Edit the NuGet.props file and fill in the package metadata for your NuGet packag
 Example:
 ```xml
   <PropertyGroup>
-
     <Version>0.1.0</Version>
     <Authors>Armin Herling</Authors>
     <PackageTags>CSharp</PackageTags>
     <PackageDescription>A simple .Net CI/CD repository template</PackageDescription>
     <Copyright>Copyright © Armin Herling</Copyright>
-
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>...</PackageProjectUrl>
-    <RepositoryUrl>...</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/arminherling/.NET-CI-CD-Repository-Template</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/arminherling/.NET-CI-CD-Repository-Template.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageIcon>ProjectIcon.png</PackageIcon>
-
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
   </PropertyGroup>
 ```
