@@ -1,0 +1,19 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+
+    <Version>0.1.0</Version>
+    <Authors>...</Authors>
+    <PackageTags>...</PackageTags>
+    <PackageDescription>...</PackageDescription>
+    <Copyright>Copyright © ...</Copyright>
+
+    <PackageLicenseExpression>...</PackageLicenseExpression>
+    <PackageProjectUrl>...</PackageProjectUrl>
+    <RepositoryUrl>...</RepositoryUrl>
+    <PackageIcon>...</PackageIcon>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+</Project>
