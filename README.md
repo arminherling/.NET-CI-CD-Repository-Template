@@ -2,7 +2,7 @@
 
 > A template for creating new .NET repositories
 
-This repository is meant to serve as a template for new .NET repositories. The template provides github workflows for automated tests with multiple os/runtimes and automated publishing of NuGet packages.
+This repository is meant to serve as a template for new .NET repositories. The template provides GitHub workflows for automated tests with multiple os/runtimes, automated publishing of NuGet packages and automated creation of GitHub releases.
 
 ## Automated tests
 
@@ -14,9 +14,14 @@ The default settings run the tests on windows and linux with the .NET Core 3.0 a
 The template provides a workflow for automated publishing of NuGet packages.  
 All you have to do after following the setup is to update the version number and create a new git tag for that version.
 
+## Automated GitHub releases
+
+The template provides a workflow for automated creating of new GitHub releases.
+All you have to do is create a new git tag for that version, just like the automated publishing of NuGet packages.
+
 ## Default issue templates and .gitignore
 
-The repository includes the github default issue templates for bug reports and feature requests with some minor changes.  
+The repository includes the GitHub default issue templates for bug reports and feature requests with some minor changes.  
 A default .gitignore file for Visual Studio is also included.
 
 # How to use
@@ -45,7 +50,7 @@ Example:
 
 You can change the default environments by simply editing the strategy matrix in the `tests.yml` file.
 
-Supported Github-hosted runners: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idruns-on
+Supported GitHub-hosted runners: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
 
 ```yml
@@ -107,7 +112,7 @@ Make sure to edit `.github/workflows/nuget.yml` if you use a different name for 
 
 How to get your API key: https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli#acquire-your-api-key
 
-How to add a github secret: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets#creating-encrypted-secrets
+How to add a GitHub secret: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets#creating-encrypted-secrets
 
 The result should look like this:
 <p align="center">
@@ -118,3 +123,7 @@ The result should look like this:
 
 The last step to publish your NuGet packages is to increase the version number in the `NuGet.props` file and create a new git tag.  
 The tag has to start with 'v' for this to work by default, this can be changed in the `nuget.yml` file.
+
+## How to create GitHub releases
+
+All you have to do is create a new git tag, it has to start with 'v' for this to work by default, this can be changed in the `github releases.yml` file.
